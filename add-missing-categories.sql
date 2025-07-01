@@ -1,0 +1,1 @@
+-- Script para adicionar categorias faltantes para usuários existentes

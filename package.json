@@ -1,21 +1,53 @@
 {
-  "name": "organizze-app",
+  "name": "rk-gestao-app",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "type-check": "tsc --noEmit",
+    "build:android": "expo build:android",
+    "build:ios": "expo build:ios",
+    "publish": "expo publish"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.1.2",
+    "@react-navigation/bottom-tabs": "^7.4.2",
+    "@react-navigation/native": "^7.1.14",
+    "@react-navigation/stack": "^7.4.2",
+    "@supabase/supabase-js": "^2.50.2",
     "expo": "~53.0.13",
+    "expo-constants": "^17.1.6",
+    "expo-linking": "^7.1.5",
+    "expo-media-library": "~17.1.7",
+    "expo-router": "^5.1.1",
     "expo-status-bar": "~2.2.3",
+    "firebase": "^11.9.1",
     "react": "19.0.0",
-    "react-native": "0.79.4"
+    "react-native": "0.79.4",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-screens": "^4.11.1",
+    "react-native-vector-icons": "^10.2.0",
+    "react-native-view-shot": "^4.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@react-native-community/cli": "^18.0.0",
+    "@types/react": "~19.0.10",
+    "@types/react-native": "^0.72.8",
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/parser": "^8.35.0",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "eslint-import-resolver-babel-module": "^5.3.2",
+    "eslint-plugin-import": "^2.32.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3"
   },
   "private": true
 }

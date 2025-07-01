@@ -1,5 +1,5 @@
 # Organizze App
-https://www.instagram.com/p/DLgh--YMgok/ - video do app
+https://www.instagram.com/p/DLgh--YMgok/ - video do app <br>
 Um aplicativo de controle financeiro pessoal inspirado no Organizze, desenvolvido com React Native, Expo e Firebase.
 
 ## 🚀 Funcionalidades
